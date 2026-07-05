@@ -1,13 +1,17 @@
 # DJI_04_Air_Unit_Gyro_Patcher
 Cleans up Gyro data in MP4 files recorded by DJI Air Units with stabilization issue (mostly 2026 w/ 1469D gyro)
+All code was generated with Claude Sonnet 5 Medium.
 
 Requirements:
 - FFMPEG and associated tools (ffprobe) must be accessible in the path, or in the execution directory.
 - Python 3.8+
+- Video recorded with DJI Air Unit with Rocksteady turned off
+- Stabilization then done in Gyroflow with your preferred settings. Test video was done w/ default settings 110% Zoom Limit
+
+Test videos were 4k 100fps DLogM (Test videos not provided due to GitHub size restrictions.)
 
 
 dji_gyro_fix.py - extracts, cleans up, and adds cleaned gyro data back to MP4 file
----
 USAGE
 ---
     python3 dji_gyro_fix.py INPUT.MP4 [options]
@@ -22,7 +26,6 @@ By default, given INPUT.MP4, this writes:
 
 
 extract_dji_gyro.py - extractor for gyro data from DJI MP4 files.
-
 USAGE
 ---
     python3 extract_dji_gyro.py INPUT.MP4 [OUTPUT.csv]
@@ -33,7 +36,6 @@ input file.
 
 
 inject_dji_gyro.py - Write gyro/attitude data from a CSV file (in the format produced by extract_dji_gyro.py) back into a DJI MP4 file
-
 USAGE
 ---
     python3 inject_dji_gyro.py INPUT.MP4 DATA.csv OUTPUT.MP4
