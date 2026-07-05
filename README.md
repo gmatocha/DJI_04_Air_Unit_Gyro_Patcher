@@ -1,6 +1,7 @@
 # DJI_04_Air_Unit_Gyro_Patcher
 Cleans up Gyro data in MP4 files recorded by DJI Air Units with stabilization issue (mostly 2026 w/ 1469D gyro)
-All code was generated with Claude Sonnet 5 Medium.
+
+All code and documentation below was generated with Claude Sonnet 5 Medium. May contain errors.
 
 Requirements:
 - FFMPEG and associated tools (ffprobe) must be accessible in the path, or in the execution directory.
