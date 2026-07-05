@@ -7,10 +7,11 @@ Requirements:
 
 
 dji_gyro_fix.py - extracts, cleans up, and adds cleaned gyro data back to MP4 file
-This is the "single step" code. Use programs below for individual extract, fix, inject functions.
 USAGE
 ---
     python3 dji_gyro_fix.py INPUT.MP4 [options]
+
+This is the "single step" code. Use programs below for individual extract, fix, inject functions.
 
 By default, given INPUT.MP4, this writes:
     INPUT_gyro_raw.csv       - the raw extracted telemetry
