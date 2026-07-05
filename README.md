@@ -7,6 +7,7 @@ Requirements:
 
 
 dji_gyro_fix.py - extracts, cleans up, and adds cleaned gyro data back to MP4 file
+
 USAGE
 ---
     python3 dji_gyro_fix.py INPUT.MP4 [options]
@@ -21,6 +22,7 @@ By default, given INPUT.MP4, this writes:
 
 
 extract_dji_gyro.py - extractor for gyro data from DJI MP4 files.
+
 USAGE
 ---
     python3 extract_dji_gyro.py INPUT.MP4 [OUTPUT.csv]
@@ -31,6 +33,7 @@ input file.
 
 
 inject_dji_gyro.py - Write gyro/attitude data from a CSV file (in the format produced by extract_dji_gyro.py) back into a DJI MP4 file
+
 USAGE
 ---
     python3 inject_dji_gyro.py INPUT.MP4 DATA.csv OUTPUT.MP4
